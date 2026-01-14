@@ -18,6 +18,13 @@
    String.valueOf(int i);
  ```
 
+4. StringBuilder 활용
+```java
+StringBuilder result = new StringBuilder();
+result.insert(0, parse(target % base)); // 여기서 index는 result의 인덱스를 의미, 따라서 맨 앞에 붙이고 싶은 경우 index를 0으로 지정
+result.toString();
+```
+
 ### 절대값 메소드
 ```java
 import java.util.*;
