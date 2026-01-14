@@ -1,5 +1,11 @@
 # 기본 입출력
 
+### 0. 기본 import 문
+```java
+import java.io.*
+import java.util.*
+```
+
 ### 1. 기본 문자열 입력
 
 ```java
