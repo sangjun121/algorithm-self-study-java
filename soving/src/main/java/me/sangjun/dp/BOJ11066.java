@@ -72,6 +72,9 @@ public class BOJ11066 {
         }
     }
 
+    /**
+     * @Deprecated O(N ^ 3)의 시간 복잡도 소요. 아래 Prefix Sum 기법 사용 추천
+     */
     private static int[][] getSum(int[] valueArr) {
         int size = valueArr[0];
         int[][] sums = new int[size + 1][size + 1];
@@ -86,5 +89,34 @@ public class BOJ11066 {
             }
         }
         return sums;
+    }
+
+    /**
+     * @Deprecated 대각선 순서(왼쪽 위에서 아래)로 탐색 2중 for문 접근법 - 각 행과 열의 i와 j를 2중 for문으로 사용하지 않고, i와 len를 기반으로 2중 for문을 구성하는 방식.
+     * 구간의 길이 len은 j-i로 구성된다.
+     *
+     * <br>
+     * 정석 코드는 위의 Readme에서 확인.
+     * @see <a href="https://github.com/sangjun121/algorithm-self-study-java/tree/main/study/array">Readme</a>
+     * 에서 확인
+     */
+    private static void findByDiagonalSeq() {
+        int[][] arr = new int[4][4];
+        int k = 4 - 1; //길이의 최대는 4
+
+        for (int len = 0; len <= k; len++) {
+            for (int i = 1; i <= k + 1 - len; i++) {
+                int j = i + len;
+                // arr[i][j] 처리
+            }
+        }
+    }
+
+    /**
+     * Prefix Sum 기법 O(N^2)의 시간 복잡도 소요.
+     */
+    private static int[][] getPrefixSum(int[] valueArr) {
+        int size = valueArr[0];
+        int[][] sums = new int[size + 1][size + 1];
     }
 }
