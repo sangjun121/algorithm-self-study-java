@@ -113,10 +113,19 @@ public class BOJ11066 {
     }
 
     /**
-     * Prefix Sum 기법 O(N^2)의 시간 복잡도 소요.
+     * @Deprecated 단지 미사용인 함수, 위의 getSum보다 효율적이다. Prefix Sum(구간합) 기법, 이차원 배열이므로 O(N^2)의 시간 복잡도 소요.
      */
     private static int[][] getPrefixSum(int[] valueArr) {
         int size = valueArr[0];
-        int[][] sums = new int[size + 1][size + 1];
+        int[][] sum = new int[size + 1][size + 1];
+
+        for (int i = 1; i <= size; i++) {
+            sum[i][1] = valueArr[i];
+            for (int j = i + 1; j <= size; j++) {
+                sum[i][j] = sum[i][j - 1] + valueArr[j];
+            }
+        }
+
+        return sum;
     }
 }
