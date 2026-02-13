@@ -76,4 +76,11 @@ public class BOJ1260 {
             dfs(w, adj, visit);
         }
     }
+
+    /**
+     * ArrayList의 배열로 인접리스트 구현하기. ArrayList<Integer>[]
+     */
+    private static void makeListWithArrayListArray(int N){
+        ArrayList<Integer>[] adj = new ArrayList[N + 1];
+    }
 }

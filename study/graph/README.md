@@ -162,6 +162,12 @@ int[][] adj = new int[V][V];
 import java.util.ArrayList;
 
 ArrayList<ArrayList<Integer>> adj;
+
+// 실제 코드
+int N = 10;
+
+ArrayList<Integer>[] adj; // ArrayList의 배열을 의미한다.
+adj = new ArrayList[N+1];
 ```
 
 - 공간복잡도: 모든 간선의 차수의 합만큼의 공간이 필요하기 때문에, 2E만큼의 공간복잡도가 필요 따라서 O(E) 공간 소모.
