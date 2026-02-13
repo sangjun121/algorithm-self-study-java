@@ -48,7 +48,7 @@ int[][] arr = new int[3][4];
 
 ### 1. 2차원 배열 대각선 순회하기
 
-![image](../asset/traversing-a-2D-array-diagonally.png)
+![image](../../asset/traversing-a-2D-array-diagonally.png)
 
 - 원리: 2중 포문을 각 배열의 행(i)과 열(j)가 아닌, 행(i)와 len(j-i)을 기점으로 for문 돌리기
 
