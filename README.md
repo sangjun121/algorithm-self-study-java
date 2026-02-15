@@ -1,2 +1,15 @@
 # algorithm-self-study-java
-my personal Java study for coding tests
+
+## 📂 Project Structure
+코딩 테스트 준비를 위한 알고리즘 학습 및 문제 풀이를 기록하는 레포지토리입니다.
+
+### 1. `playground`
+- 간단한 자바 코드 스니펫을 작성하고 테스트해보는 연습장입니다.
+
+### 2. `soving` (Solving)
+- 백준 온라인 저지(BOJ) 등 실제 알고리즘 문제 풀이 코드를 저장하는 곳입니다.
+- 문제 유형별로 패키지가 구분되어 있습니다.
+
+### 3. `study`
+- 알고리즘 및 자료구조에 대한 이론 학습 내용을 정리한 문서들이 있습니다.
+- Markdown 형식으로 개념, 시간 복잡도, 핵심 로직 등을 정리합니다.
