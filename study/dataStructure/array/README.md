@@ -44,6 +44,31 @@ int[][] arr = {
 int[][] arr = new int[3][4];
 ```
 
+### 4. 이차원 배열 복제본 만들기
+⛔️주의: ```int[][] copy = original;```는 얕은 복사로, 동일한 배열주소를 참조한다.
+
+2차원 배열에서 row.clone()을 행마다 쓰는 방식과 이중 for문으로 직접 복사하는 방식은 시간 복잡도가 동일하다.
+1. 수동으로 2중 for문 사용하여 복사하기
+```java
+int[][] copy = new int[original.length][original[0].length];
+
+for (int i = 0; i < original.length; i++) {
+    for (int j = 0; j < original[0].length; j++) {
+        copy[i][j] = original[i][j];
+    }
+}
+```
+
+2. clone() 사용하기
+- **시간 복잡도는 1번과 동일하다.**
+```java
+int[][] copy = new int[original.length][];
+
+for (int i = 0; i < original.length; i++) {
+    copy[i] = original[i].clone();
+}
+```
+
 ## 빈출 유형
 
 ### 1. 2차원 배열 대각선 순회하기
