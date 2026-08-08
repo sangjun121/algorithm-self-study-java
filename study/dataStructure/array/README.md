@@ -69,6 +69,15 @@ for (int i = 0; i < original.length; i++) {
 }
 ```
 
+### 5. 2차원 배열 0번 열 기준으로 정렬하기
+```java
+import java.util.Arrays;
+
+int[][] lines = new int[N][2];
+
+Arrays.sort(lines, (a, b) -> Integer.compare(a[0], b[0]));
+```
+
 ## 빈출 유형
 
 ### 1. 2차원 배열 대각선 순회하기
